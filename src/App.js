@@ -9,9 +9,9 @@ const App = () => {
   
 
   const surpriseOptions = [
-    'Who won the latest Nobel Physics Prize?',
-    'Where does pizza come from?',
-    'How do you make a BLT sandwich?'
+    'What are the symptoms of postpartum depression?',
+    'Who is at risk for postpartum depression?',
+    'I'm feeling down?'
   ]
 
   const surprise = () => {
@@ -76,7 +76,7 @@ const App = () => {
         <div className="input-container">
           <input
             value={value}
-            placeholder="When is Christmas...?"
+            placeholder="What's on your mind?"
             onChange={(e) =>setValue(e.target.value)}
           />
           {!error && <button onClick={getResponse}>Ask me</button>}
